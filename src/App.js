@@ -15,7 +15,21 @@ const App = () => {
           <div className="routes"></div>
         </Layout>
       </div>
-      <div className="footer"></div>
+      <div className="footer">
+        <Typography.Title
+          level={5}
+          style={{ color: "white", textAlign: "center" }}
+        >
+          Copyright © 2023
+          <Link to="/"> Project_Crypto</Link> <br />
+          Ajay Dhangar.
+        </Typography.Title>
+        <Space>
+          <Link to="/">Home</Link>
+          <Link to="/exchanges">Exchanges</Link>
+          <Link to="/news">News</Link>
+        </Space>
+      </div>
     </div>
   );
 };
