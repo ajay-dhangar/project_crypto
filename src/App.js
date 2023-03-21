@@ -1,37 +1,25 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
-import { Layout, Typography, Space } from "antd";
-import { Navbar } from "./components";
+import logo from './logo.svg';
+import './App.css';
 
-import "./App.css";
-const App = () => {
+function App() {
   return (
-    <div className="app">
-      <div className="navbar">
-        <Navbar />
-      </div>
-      <div className="main">
-        <Layout>
-          <div className="routes"></div>
-        </Layout>
-      </div>
-      <div className="footer">
-        <Typography.Title
-          level={5}
-          style={{ color: "white", textAlign: "center" }}
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Copyright © 2023
-          <Link to="/"> Project_Crypto</Link> <br />
-          Ajay Dhangar.
-        </Typography.Title>
-        <Space>
-          <Link to="/">Home</Link>
-          <Link to="/exchanges">Exchanges</Link>
-          <Link to="/news">News</Link>
-        </Space>
-      </div>
+          Learn React
+        </a>
+      </header>
     </div>
   );
-};
+}
 
 export default App;
