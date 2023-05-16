@@ -34,7 +34,7 @@ const Exchanges = () => {
                   <Row key={exchange.uuid}>
                     <Col span={6}>
                       <Text><strong>{exchange.rank}.</strong></Text>
-                      <Avatar className="exchange-image" src={exchange.iconUrl} />
+                      <Avatar className='exchange-image' src={exchange.iconUrl} />
                       <Text><strong>{exchange.name}</strong></Text>
                     </Col>
                     <Col span={6}>${millify(exchange.volume)}</Col>
