@@ -1,5 +1,5 @@
 {
-    "name": "crypto_currency",
+    "name": "project_crypto",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
